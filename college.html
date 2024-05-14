@@ -1,0 +1,1123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>College</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+<!-- Add fancyBox main JS and CSS files -->
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+			});
+		});
+		</script>
+</head>
+<body>
+<!-- 导航 -->
+<section>
+	<div class="header">	
+		<div class="wrap"> 
+				<!-- <div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt=""/></a>
+				</div> -->
+				<div class="cssmenu">
+					<ul>
+						<li><a href="index.html">我就是我</a></li>
+						<li class="active"><a href="college.html">我的大学</a></li> 
+						<li><a href="hometown.html">我的家乡</a></li> 
+						<li><a href="company.html">我的公司</a></li> 
+						<li><a href="growth.html">我的足迹</a></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+	</div>
+</section>
+
+<!-- banner -->
+<section>
+<div class="index-banner">
+	<div class="wmuSlider example1">
+		<div class="wmuSliderWrapper">
+			<article style="position: absolute; width: 100%; opacity: 0;"> 
+				<div class="banner-wrap">
+					<div class="slider-left">
+					<h3>同窗三年</h3>
+					<h4>甚是荣幸</h4>
+					</div>
+					<div class="slider-right">
+					<img src="images/bj3.jpg" /> 
+					</div>
+					<div class="clear"></div>
+				</div>
+			</article>
+			<article style="position: relative; width: 100%; opacity: 1;"> 
+				<div class="banner-wrap">
+						<div class="slider-right">
+					<img src="images/coll2.jpg" /> 
+					</div>
+					<div class="slider-left">
+					<h3>志同道合</h3>
+					<h4>并肩前行</h4>
+					</div>
+				<div class="clear"></div>
+				</div>
+			</article>
+			<article style="position: absolute; width: 100%; opacity: 0;">
+				<div class="banner-wrap">
+					<div class="slider-left">
+					<h3>相遇即缘分</h3>
+					<h4>前程似锦</h4>
+					</div>
+				<div class="slider-right">
+					<img src="images/zb1.jpg" /> 
+					</div>
+					<div class="clear"></div>
+				</div>
+			</article>
+			<article style="position: absolute; width: 100%; opacity: 0;">
+				<div class="banner-wrap">
+					<div class="slider-right">
+					<img src="images/yy4.jpg" /> 
+					</div>
+					<div class="slider-left">
+					<h3>迎难而上</h3>
+					<h4>乃吾辈之责</h4>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</article>
+			<article style="position: absolute; width: 100%; opacity: 0;"> 
+					<div class="banner-wrap">
+					<div class="slider-left">
+					<h3>万物可爱</h3>
+					<h4>未来可期</h4>
+					</div>
+					<div class="slider-right">
+					<img src="images/yy2.jpg" /> 
+					</div>
+					<div class="clear"></div>
+				</div>
+			</article>
+		</div>
+		<a class="wmuSliderPrev">Previous</a><a class="wmuSliderNext">Next</a>
+		<ul class="wmuSliderPagination">
+			<li><a href="#" class="">0</a></li>
+			<li><a href="#" class="">1</a></li>
+			<li><a href="#" class="wmuActive">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			</ul>
+	</div>
+			<script src="js/jquery.wmuSlider.js"></script> 
+			<script type="text/javascript" src="js/modernizr.custom.min.js"></script> 
+				<script>
+						$('.example1').wmuSlider();         
+					</script> 	           	      
+</div>
+
+</section>
+
+<section>
+	<div class="main">	
+		<div class="portfolio-top">
+				<div class="wrap">
+				 <h3>记录我的大学生活</h3>
+				 <h5>Documenting My College Life</h5>
+			 </div>
+		 </div>
+			 <div class="container">
+			 <ul id="filters" class="clearfix">
+				 <li><span class="filter active" data-filter="classes societies assistant efforts important">所有</span></li>
+				 <li><span class="filter" data-filter="classes">21物联网4</span></li>
+				 <li><span class="filter" data-filter="societies">微芯动力协会</span></li>
+				 <li><span class="filter" data-filter="assistant">23物联网2</span></li>
+				 <li><span class="filter" data-filter="efforts">有意义的事</span></li>
+				 <li><span class="filter" data-filter="important">成长瞬间</span></li>
+				 </ul>
+			 <div class="clear"></div>
+			 <div id="portfoliolist" style="     " class="">
+				 <div class="wrapper">
+					 <!--classes  -->
+					 <section>
+						 <div id="portfolio-classes" class="portfolio-list">
+							 <div class="portfolio classes mix_all" data-cat="classes" style="  display: inline-block; opacity: 1;">
+								 <div class="portfolio-wrapper">			
+									 <a href="project.html">
+										 <img src="images/bj1.jfif" alt="Image 2">
+									 </a>
+									 <div class="links">
+										<h3 class="co_title">班级第一张合照</h3>
+										 <h4><a href="">咔擦一声，我们的大学生活开始了</a></h4><div class="clear"></div>
+									 </div>
+								 </div>
+							 </div>		
+							 <div class="portfolio classes mix_all" data-cat="classes" style="  display: inline-block; opacity: 1;">
+								 <div class="portfolio-wrapper">			
+									 <a href="project.html">
+										 <img src="images/bj3.jpg" alt="Image 2">
+									 </a>
+									 <div class="links">
+										<h3 class="co_title">班级最后一张合照</h3>
+										 <h4><a href="">咔擦一声，我们的大学生活结束了</a></h4><div class="clear"></div>
+									 </div>
+									 
+								 </div>
+							 </div>		
+							 <div class="portfolio classes mix_all" data-cat="classes" style="  display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">			
+									<a href="project.html">
+										<img src="images/daoshi.jpg" alt="Image 2">
+									</a>
+									<div class="links">
+										<h3 class="co_title">毕业&就业的领航人</h3>
+										 <h4><a href="">毕业&就业的领航人</a></h4><div class="clear"></div>
+									 </div>
+								
+								</div>
+							</div>		
+						
+						 </div>
+					 </section>				
+					 
+					 <!-- societies -->
+					 <section>
+						 <div id="portfolio-societies" class="portfolio-list">
+							 <div class="portfolio societies mix_all" data-cat="societies" style="  display: inline-block; opacity: 1;">
+								 <div class="portfolio-wrapper">			
+									 <a href="project.html">
+										 <img src="images/xh1.jfif" alt="Image 2">
+									 </a>
+									<div class="links">
+										<h3 class="co_title">荣幸之至，认识了一群志同道合的朋友</h3>
+										 <h4><a href="">有幸担任了微芯的会长，跟11位小伙伴一起举办了无数次活动，在那个小小的414试室留下了无数美好的回忆。</a></h4><div class="clear"></div>
+									 </div>
+								 </div>
+							 </div>	
+							 <div class="portfolio societies mix_all" data-cat="societies" style="  display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">			
+									<a href="project.html">
+										<img src="images/xh3.JPG" alt="Image 2">
+									</a>
+
+									
+									<div class="links">
+										<h3 class="co_title">百团招新</h3>
+										 <h4><a href="">一起迎接了微芯了新一批伙伴</a></h4><div class="clear"></div>
+									 </div>
+								</div>
+							</div>	
+							 <div class="portfolio societies mix_all" data-cat="societies" style="  display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+
+								<video>
+									<source src="images/bj4.mp4" type="video/mp4">
+								</video>
+								<div class="links">
+								   <h3 class="co_title">驾驶演练</h3>
+								   <h4><a href="">在协会体会驾校演练</a></h4><div class="clear"></div>
+								  
+							   </div>
+								
+						 </div>
+					 </section>
+				 
+					 <!-- assistant -->
+					 <section>
+						 <div id="portfolio-assistant" class="portfolio-list">
+							 <div class="portfolio assistant mix_all" data-cat="assistant" style="  display: inline-block; opacity: 1;">
+								 <div class="portfolio-wrapper">			
+									 <a href="project.html">
+										 <img src="images/zb1.jpg" alt="Image 2">
+									 </a>
+
+									 <div class="links">
+										<h3 class="co_title">感恩遇见一群可爱的小朋友。</h3>
+										 <h4><a href="">很惊喜，没想到，感恩助班活动策划得如此精彩，何其有幸，当你们的助班，参与到了你们的大学生活。</a></h4><div class="clear"></div>
+									 </div>
+								 </div>
+							 </div>	
+							 <div class="portfolio assistant mix_all" data-cat="assistant" style="  display: inline-block; opacity: 1;">
+								 <div class="portfolio-wrapper">			
+									
+									 <video width="640" height="360" controls>
+										 <source src="images/zb2.mp4" type="video/mp4">
+										 Your browser does not support the video tag.
+									 </video>
+									 <div class="links">
+										<h3 class="co_title">感恩助班</h3>
+										<h4><a href="">真的有被他们做的视频感动到</a></h4><div class="clear"></div>
+									   
+									</div>
+								 </div>
+							 </div>	
+						 </div>
+					 </section>
+				 
+					 <!-- efforts -->
+					 <section>
+						 <div id="portfolio-efforts" class="portfolio-list">
+							 <div class="portfolio efforts mix_all" data-cat="efforts" style="  display: inline-block; opacity: 1;">
+								 <div class="portfolio-wrapper">			
+									 <a href="project.html">
+										 <img src="images/yy1.jpg" alt="Image 2"  width="640" height="600" controls>
+									 </a>
+									 <div class="links">
+										<h3 class="co_title">夜爬梧桐山</h3>
+										 <h4><a href="">晚上十一点从学校出发，赶最后一班地铁站，直达梧桐山，爬了一晚上，很累，但是真的值得，半山腰总是挤的，你得去山顶看看；会当凌绝顶，一览众山小</a></h4><div class="clear"></div>
+									 </div>
+								 </div>
+							 </div>		
+							 <div class="portfolio efforts mix_all" data-cat="efforts" style="  display: inline-block; opacity: 1;">
+								 <div class="portfolio-wrapper">			
+									 <a href="project.html">
+										 <img src="images/yy3.jpg" alt="Image 2">
+									 </a>
+									 <div class="links">
+										<h3 class="co_title">献血</h3>
+										 <h4><a href="">我相信献血传递的永远不止是一份爱心</a></h4><div class="clear"></div>
+									 </div>
+								 </div>
+							 </div>		
+							 <div class="portfolio efforts mix_all" data-cat="efforts" style="  display: inline-block; opacity: 1;">
+								 <div class="portfolio-wrapper">			
+									 <a href="project.html">
+										 <img src="images/yy3.jfif" alt="Image 2">
+									 </a>
+									 <div class="links">
+										<h3 class="co_title">军训</h3>
+										 <h4><a href="">虽然军训只有短短的几天，但是却是青春不可或缺的那一份迷彩那一抹军绿色也成为了大学生活中宝贵的色彩。</a></h4><div class="clear"></div>
+											 
+									 </div>
+								 </div>
+							 </div>		
+							 <div class="portfolio efforts mix_all" data-cat="efforts" style="  display: inline-block; opacity: 1;">
+								 <div class="portfolio-wrapper">			
+									 <a href="project.html">
+										 <img src="images/yy2.jpg" alt="Image 2">
+									 </a>
+									 <div class="links">
+										<h3 class="co_title">深圳湾看日出</h3>
+										 <h4><a href="">晚上十一点从学校出发，赶最后一班地铁站，直达海底捞，刚好有一个小伙伴生日，庆祝到五点，骑共享到深圳湾日出剧院，星星很亮，周围的人都很浪漫，听歌、弹吉他、唱歌、换声笑语，我愿称之为青春</a></h4><div class="clear"></div>
+											 
+									 </div>
+								 </div>
+							 </div>		
+							 <div class="portfolio efforts mix_all" data-cat="efforts" style="  display: inline-block; opacity: 1;">
+								 <div class="portfolio-wrapper">			
+									 <a href="project.html">
+										 <img src="images/yy4.jpg" alt="Image 2">
+									 </a>
+									 <div class="links">
+										<h3 class="co_title">疫情期间当志愿者</h3>
+										 <h4><a href="">记忆如此深刻，大年初一，疫情爆发，村里号召大家当志愿者检测核酸，我跟家人商议后便毅然决然地报了名，鲁迅曾说过“有一份光，便发一份热”</a></h4><div class="clear"></div>
+									 </div>
+								 </div>
+							 </div>		
+						 </div>
+					 </section>
+ 
+					 <!-- important -->
+					 <section>
+						 <div id="portfolio-important" class="portfolio-list">
+							 <div class="portfolio important mix_all" data-cat="important" style="  display: inline-block; opacity: 1;">
+								 <div class="portfolio-wrapper">			
+									 <a href="project.html">
+										 <img src="images/ff (2).jpg" alt="Image 2">
+									 </a>
+									 <div class="links">
+										<h3 class="co_title">家人永远是最坚强的后盾</h3>
+										 <h4><a href="">2018年，刚上高一，那是我第一次离开家住宿学校，当天晚上学校就要求上交手机，我毫无顾虑便交上去了，而我不知道，那天晚上
+											 有一群人为我操碎了心，电话打不通，也不知怎么联系学校，第二天，我在宿舍门口看到了我的父亲，他满头大汗，永远没有人能理解
+											 我当时的心情，从我家到学校，两个小时的路程，从一楼到我宿舍门口，一口气爬完六层楼，只为了看我一眼确保我的安全,都说成长是一瞬间的
+										 事，我确实在那一刻感受到了。</a></h4><div class="clear"></div>
+									 </div>
+								 </div>
+							 </div>	
+							 <div class="portfolio important mix_all" data-cat="important" style="  display: inline-block; opacity: 1;">
+								 <div class="portfolio-wrapper">			
+									 <a href="project.html">
+										 <img src="images/i2.jpg" alt="Image 2">
+									 </a>
+									 <div class="links">
+										<h3 class="co_title">放眼一博</h3>
+										 <h4><a href="">2021年，大一，凭借着英语的优势，我找到了一份家教兼职，某一天下午，老板跟我讲述了他的前半生，一个白手起家很励志的故事，
+											 他说，一定要把眼光放长远一点，定一个目标，然后不断地朝这个目标努力就好了，就像假如北大在你上高一的时候给你发了一张录取通知书，
+											 但是你要想得到它，需要在高中三年满足以下的条件，你答应还是不答应？而那些条件于我便是不断地朝着目标前进，无比感谢他，让我的
+											 大学三年过得如此充实，不留遗憾。</a></h4><div class="clear"></div>
+											 
+									 </div>
+								 </div>
+							 </div>		
+						 </div>
+					 </section>
+				 
+				 </div>				
+				 <div class="clear"> </div>
+			 </div>			
+		</div>
+	  </div>
+	 </div>
+</section>
+	
+<div id="videoModal" class="modal">
+	<div class="modal-contents">
+		<span class="close">&times;</span>
+		<p class="modal-description">视频描述</p>
+		<video controls autoplay>
+			<source src="" type="images/bj4.mp4">
+			Your browser does not support the video tag.
+		</video>
+	</div>
+</div>
+<!-- button -->
+<section>
+	<div class="button-container">
+		<button id="addProjectBtn" class="button_college">添加</button>
+		<button id="clearProjectsBtn" class="button_college">清除</button>
+	</div>
+</section>
+<!-- 模态框 -->
+<section>
+<!-- 模态框 -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>增加新的事件</h2>
+        <form id="projectForm">
+            <label for="projectName">事件名称:</label>
+            <input type="text" id="projectName" name="projectName" required><br><br>
+            <label for="projectDescription">事件描述:</label>
+            <textarea id="projectDescription" name="projectDescription" required></textarea><br><br>
+            <label for="projectCategory">事件类型:</label>
+            <select id="projectCategory" name="projectCategory" required>
+                <option value="">Select Category</option>
+                <option value="classes">Classes</option>
+                <option value="societies">Societies</option>
+                <option value="assistant">Assistant</option>
+                <option value="efforts">Efforts</option>
+                <option value="jobs">Jobs</option>
+            </select><br><br>
+            <label for="projectImage">选择图片:</label>
+            <input type="file" id="projectImage" name="projectImage" accept="image/*" required><br><br>
+            <button type="submit">上传</button>
+        </form>
+    </div>
+</div>
+
+</section>
+<!--  -->
+
+<!-- 项目详情模态框 -->
+<section>
+	<div id="projectDetailModal" class="modal">
+		<div class="modal-content">
+			<span class="closeDetail">&times;</span>
+			<h2 id="projectDetailName"></h2>
+			<img id="projectDetailImage" src="" alt="">
+		</div>
+	</div>
+</section>
+
+
+
+<!-- JS-->
+<!-- <section>
+	<script>
+	// 	// 获取保存的项目信息或初始化为空数组
+	// 	var savedProjects = localStorage.getItem("savedProjects");
+	// 	savedProjects = savedProjects ? JSON.parse(savedProjects) : [];
+	
+	// 	// 在页面加载时加载保存的项目信息
+	// 	window.onload = function() {
+	// 		savedProjects.forEach(function(project) {
+	// 			addProjectToPage(project);
+	// 		});
+	// 	};
+	
+	// 	// 添加新项目到页面和本地存储
+	// 	document.getElementById("projectForm").addEventListener("submit", function(event) {
+	// 		event.preventDefault(); // 阻止默认提交行为
+	// 		// 获取表单输入的值
+	// 		var projectName = document.getElementById("projectName").value;
+	// 		var projectCategory = document.getElementById("projectCategory").value;
+	// 		var projectImage = document.getElementById("projectImage").files[0];
+	// 		// 创建新项目对象
+	// 		var newProject = {
+	// 			name: projectName,
+	// 			category: projectCategory,
+	// 			image: URL.createObjectURL(projectImage)
+	// 		};
+	// 		// 将新项目添加到页面
+	// 		addProjectToPage(newProject);
+	// 		// 将新项目添加到保存的项目信息中
+	// 		savedProjects.push(newProject);
+	// 		// 将保存的项目信息更新到本地存储
+	// 		localStorage.setItem("savedProjects", JSON.stringify(savedProjects));
+	// 		// 关闭模态框
+	// 		modal.style.display = "none";
+	// 	});
+	
+	// 	// 添加项目到页面
+	// 	function addProjectToPage(project) {
+	// 		var newProjectHTML = `
+	// 			<div class="portfolio ${project.category} mix_all" data-cat="${project.category}" style="display: inline-block; opacity: 1;">
+	// 				<div class="portfolio-wrapper">            
+	// 					<a href="project.html">
+	// 						<img src="${project.image}" alt="${project.name}">
+	// 					</a>
+	// 					<div class="links">
+	// 						<h4><a href="">${project.name}</a></h4>
+							
+	// 					</div>
+	// 				</div>
+	// 			</div>
+	// 		`;
+	
+	// 		// 将新项目添加到页面中
+	// 		var portfolioList = document.getElementById(`portfolio-${project.category}`);
+	// 		portfolioList.innerHTML += newProjectHTML;
+	// 	}
+	
+	// 	// 获取模态框
+	// 	var modal = document.getElementById("myModal");
+	
+	// 	// 获取按钮，用于打开模态框
+	// 	var btn = document.getElementById("addProjectBtn");
+	
+	// 	// 获取 <span> 元素，用于关闭模态框
+	// 	var span = document.getElementsByClassName("close")[0];
+	
+	// 	// 当点击按钮时打开模态框
+	// 	btn.onclick = function() {
+	// 		modal.style.display = "block";
+	// 	}
+	
+	// 	// 当点击 <span> (x) 按钮时，关闭模态框
+	// 	span.onclick = function() {
+	// 		modal.style.display = "none";
+	// 	}
+	
+	// 	// 当用户点击模态框之外的任何地方，关闭模态框
+	// 	window.onclick = function(event) {
+	// 		if (event.target == modal) {
+	// 			modal.style.display = "none";
+	// 		}
+	// 	}
+	// 	// 清除本地存储中保存的项目信息
+	// function clearLocalStorage() {
+	// 	localStorage.removeItem("savedProjects");
+	// 	location.reload(); // 重新加载页面
+	// }
+	
+	// // 获取清除按钮
+	// var clearBtn = document.getElementById("clearProjectsBtn");
+	
+	// // 当点击清除按钮时，清除本地存储中的项目信息
+	// clearBtn.onclick = function() {
+	// 	clearLocalStorage();
+	// };
+	
+	// 展开事情功能
+		// 添加项目点击事件监听器
+		document.querySelectorAll('.portfolio').forEach(item => {
+			item.addEventListener('click', event => {
+				event.preventDefault();
+				// 获取项目信息
+				var projectName = item.querySelector('h4 a').innerText;
+				var projectImageSrc = item.querySelector('img').getAttribute('src');
+				// 更新模态框内容
+				document.getElementById('projectDetailName').innerText = projectName;
+				document.getElementById('projectDetailImage').src = projectImageSrc;
+				// 显示模态框
+				document.getElementById('projectDetailModal').style.display = 'block';
+			});
+		});
+	
+		// 获取模态框
+		var detailModal = document.getElementById("projectDetailModal");
+	
+		// 获取 <span> 元素，用于关闭模态框
+		var closeDetailSpan = document.getElementsByClassName("closeDetail")[0];
+	
+		// 当点击 <span> (x) 按钮时，关闭模态框
+		closeDetailSpan.onclick = function() {
+			detailModal.style.display = "none";
+		}
+	
+		// 当用户点击模态框之外的任何地方，关闭模态框
+		window.onclick = function(event) {
+			if (event.target == detailModal) {
+				detailModal.style.display = "none";
+			}
+		}
+
+		document.addEventListener("DOMContentLoaded", function() {
+    // 获取所有的项目
+    var projects = document.querySelectorAll('.portfolio');
+
+    // 遍历每个项目
+    projects.forEach(function(project) {
+        // 获取项目的文字说明元素
+        var description = project.querySelector('.links h4');
+
+        // 初始状态隐藏文字说明
+        description.style.display = 'none';
+
+        // 获取项目的图片元素
+        var image = project.querySelector('img');
+
+        // 添加点击事件监听器到图片上
+        image.addEventListener('click', function() {
+            // 切换文字说明的显示状态
+            if (description.style.display === 'none') {
+                description.style.display = 'none';
+            } else {
+                description.style.display = 'none';
+            }
+        });
+    });
+});
+	</script>
+</section> -->
+<!--主体  -->
+
+
+<!-- 留言板 -->
+<section>
+	<div class="container_msg">
+		<h2>留言板</h2>
+		<form id="messageForm">
+			<label for="name">名字:</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">班级:</label>
+			<input type="text" id="email" name="email" required>
+			<label for="phone">电话:</label>
+			<input type="text" id="phone" name="phone">
+			<label for="message">留言内容:</label>
+			<textarea id="message" name="message" required></textarea>
+			<button type="submit">发送</button>
+		</form>
+	
+		<div class="message-board" id="messageBoard">
+			<!-- 留言将会在此显示 -->
+			<div class="message"> 
+				<img src="images/icon.png" alt="">
+				<div class="info">
+					<div class="name">小羊肖恩</div>
+					<div>那些看似不起波澜的日复一日，会在某天让你看到坚持的意义。</div>
+				</div>
+			</div>
+	
+			<div class="message"> 
+				<img src="images/icon.png" alt="">
+				<div class="info">
+					<div class="name">Lucky</div>
+					<div>少年的肩，应该担起草长莺飞和明月清风</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- footer -->
+<section>
+	<footer class="index_footer">
+		<!-- 左侧部分 -->
+		<div class="left-section">
+			<!-- 图标 -->
+			<img src="images/footer.jpg" alt="图标" width="80" height="80">
+			<!-- 座右铭 -->
+			<p class="motto">欢迎来到我的世界:-)</p>
+		</div>
+		
+		<!-- 右侧部分 -->
+		<div class="right-section">
+			<!-- QQ 图标 -->
+			<a href="https://user.qzone.qq.com"><img src="images/f1.png" alt="QQ"></a>
+			<!-- 微信图标 -->
+			<a href="https://weixin.qq.com/"><img src="images/f2.png" alt="微信"></a>
+			<!-- 小红书图标 -->
+			<a href="https://www.xiaohongshu.com/"><img src="images/f3.png" alt="小红书"></a>
+			<!-- 知乎图标 -->
+			<a href="https://www.zhihu.com/"><img src="images/f4.png" alt="知乎"></a>
+		</div>
+	</footer>
+</section>
+<!-- JS -->
+<section>
+	<script>
+		document.getElementById("messageForm").addEventListener("submit", function(event) {
+			event.preventDefault();
+	
+			// 获取表单中的值
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			var phone = document.getElementById("phone").value;
+			var message = document.getElementById("message").value;
+	
+			// 创建留言元素
+			var messageElement = document.createElement("div");
+			messageElement.classList.add("message");
+			messageElement.innerHTML = `
+				<img src="images/icon.png" alt="Avatar">
+				<div class="info">
+					<div class="name">${name}</div>
+					<div>${message}</div>
+				</div>
+			`;
+	
+			// 将留言元素添加到留言板中
+			document.getElementById("messageBoard").appendChild(messageElement);
+	
+			// 清空表单
+			document.getElementById("messageForm").reset();
+		});
+
+
+		//
+		document.addEventListener("DOMContentLoaded", function() {
+    // 获取所有的项目
+    var projects = document.querySelectorAll('.portfolio');
+
+    // 获取用于显示标题的div
+    var titleDiv = document.querySelector('.portfolio-title');
+
+    // 添加鼠标移入事件监听器到每个项目上
+    projects.forEach(function(project) {
+        // 获取项目的标题
+        var title = project.querySelector('.links h4 a').innerText;
+
+        project.addEventListener('mouseenter', function() {
+            // 显示标题并设置标题内容
+            titleDiv.style.display = 'block';
+            titleDiv.innerText = title;
+        });
+
+        project.addEventListener('mouseleave', function() {
+            // 隐藏标题
+            titleDiv.style.display = 'none';
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    // 获取所有的项目
+    var projects = document.querySelectorAll('.portfolio');
+
+    // 添加鼠标悬停事件监听器到每个项目上
+    projects.forEach(function(project) {
+        var title = project.querySelector('.co_title');
+
+        project.addEventListener('mouseenter', function() {
+            // 显示标题
+            title.style.display = 'block';
+        });
+
+        project.addEventListener('mouseleave', function() {
+            // 隐藏标题
+            title.style.display = 'none';
+        });
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var videos = document.querySelectorAll('.portfolio-wrapper video');
+    var modal = document.getElementById('videoModal');
+    var modalVideo = modal.querySelector('video');
+
+    videos.forEach(function(video) {
+        video.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            // 获取视频的标题和其他信息
+            // var title = video.parentElement.querySelector('.co_title').textContent;
+            var description = video.parentElement.querySelector('h4').textContent;
+
+            // 更新模态框的内容
+            // modal.querySelector('.modal-title').textContent = title;
+            modal.querySelector('.modal-description').textContent = description;
+            modalVideo.src = video.querySelector('source').getAttribute('src');
+
+            // 显示模态框
+            modal.style.display = 'block';
+        });
+    });
+
+    // 关闭模态框的按钮
+    var closeButton = modal.querySelector('.close');
+    closeButton.addEventListener('click', function() {
+        modal.style.display = 'none';
+        modalVideo.pause(); // 关闭模态框时停止视频播放
+    });
+});
+// 获取模态框
+var modal = document.getElementById("videoModal");
+
+// 获取关闭按钮
+var closeButton = document.getElementsByClassName("close")[0];
+
+// 当用户点击关闭按钮时，关闭模态框
+closeButton.onclick = function() {
+    modal.style.display = "none";
+}
+
+// 当用户点击模态框之外的任何地方，关闭模态框
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+//
+// 展开事情功能
+		// 添加项目点击事件监听器
+		document.querySelectorAll('.portfolio').forEach(item => {
+			item.addEventListener('click', event => {
+				event.preventDefault();
+				// 获取项目信息
+				var projectName = item.querySelector('h4 a').innerText;
+				var projectImageSrc = item.querySelector('img').getAttribute('src');
+				// 更新模态框内容
+				document.getElementById('projectDetailName').innerText = projectName;
+				document.getElementById('projectDetailImage').src = projectImageSrc;
+				// 显示模态框
+				document.getElementById('projectDetailModal').style.display = 'block';
+			});
+		});
+	
+		// 获取模态框
+		var detailModal = document.getElementById("projectDetailModal");
+	
+		// 获取 <span> 元素，用于关闭模态框
+		var closeDetailSpan = document.getElementsByClassName("closeDetail")[0];
+	
+		// 当点击 <span> (x) 按钮时，关闭模态框
+		closeDetailSpan.onclick = function() {
+			detailModal.style.display = "none";
+		}
+	
+		// 当用户点击模态框之外的任何地方，关闭模态框
+		window.onclick = function(event) {
+			if (event.target == detailModal) {
+				detailModal.style.display = "none";
+			}
+		}
+
+		document.addEventListener("DOMContentLoaded", function() {
+    // 获取所有的项目
+    var projects = document.querySelectorAll('.portfolio');
+
+    // 遍历每个项目
+    projects.forEach(function(project) {
+        // 获取项目的文字说明元素
+        var description = project.querySelector('.links h4');
+
+        // 初始状态隐藏文字说明
+        description.style.display = 'none';
+
+        // 获取项目的图片元素
+        var image = project.querySelector('img');
+
+        // 添加点击事件监听器到图片上
+        image.addEventListener('click', function() {
+            // 切换文字说明的显示状态
+            if (description.style.display === 'none') {
+                description.style.display = 'none';
+            } else {
+                description.style.display = 'none';
+            }
+        });
+    });
+});
+//
+
+
+	</script>
+
+	<script>
+
+
+ // 获取添加按钮
+var addProjectBtn = document.getElementById("addProjectBtn");
+
+// 获取模态框
+var modal = document.getElementById("myModal");
+
+// 当点击添加按钮时显示模态框
+addProjectBtn.addEventListener("click", function() {
+    modal.style.display = "block";
+});
+
+// 获取表单
+var projectForm = document.getElementById("projectForm");
+
+// 添加表单提交事件监听器
+projectForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // 获取表单中的值
+    var projectName = document.getElementById("projectName").value;
+    var projectDescription = document.getElementById("projectDescription").value;
+    var projectCategory = document.getElementById("projectCategory").value;
+    var projectImage = document.getElementById("projectImage").files[0]; // 修改这里获取图片文件对象
+
+    // 创建新的事件元素
+    var newProject = document.createElement("div");
+    newProject.classList.add("portfolio");
+    newProject.classList.add(projectCategory);
+
+    // 创建图片元素并设置src属性
+    var imageElement = document.createElement("img");
+    imageElement.src = URL.createObjectURL(projectImage);
+    imageElement.alt = projectName;
+
+    // 添加图片元素到新事件元素中
+    newProject.appendChild(imageElement);
+
+    // 创建包含标题和描述的元素
+    var linksElement = document.createElement("div");
+    linksElement.classList.add("links");
+    linksElement.innerHTML = `
+        <h3 class="co_title">${projectName}</h3>
+        <h4><a href="">${projectDescription}</a></h4>
+        <div class="clear"></div>
+    `;
+
+
+    // 添加包含标题和描述的元素到新事件元素中
+    newProject.appendChild(linksElement);
+
+	// 添加项目到页面
+	function addProjectToPage(project) {
+		var newProjectHTML = `
+			<div class="portfolio ${project.category} mix_all" data-cat="${project.category}" style="display: inline-block; opacity: 1;">
+				<div class="portfolio-wrapper">            
+					<a href="#">
+						<img src="${project.image}" alt="${project.name}">
+					</a>
+					<div class="links">
+						<h3 class="co_title">${project.name}</h3>
+						<h4><a href="">${project.description}</a></h4>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		`;
+
+    // 将新项目添加到页面
+    var portfolioList = document.querySelector("#portfoliolist .wrapper");
+    portfolioList.innerHTML += newProjectHTML;
+
+
+// 增加
+// 将新项目添加到本地存储
+var savedProjects = localStorage.getItem("savedProjects");
+    var projectsArray = savedProjects ? JSON.parse(savedProjects) : [];
+    projectsArray.push(project);
+    localStorage.setItem("savedProjects", JSON.stringify(projectsArray));
+// 增加
+
+    // 获取新添加的项目元素
+    var newProjectElement = portfolioList.lastElementChild;
+
+    // 添加事件监听器以显示/隐藏项目标题
+    newProjectElement.addEventListener('mouseenter', function() {
+        var title = this.querySelector('.co_title');
+        title.style.display = 'block';
+    });
+
+    newProjectElement.addEventListener('mouseleave', function() {
+        var title = this.querySelector('.co_title');
+        title.style.display = 'none';
+    });
+
+    // 添加点击事件监听器以显示模态框
+    newProjectElement.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        var projectName = project.name;
+        var projectImageSrc = project.image;
+
+        // 更新模态框的内容
+        document.getElementById('projectDetailName').innerText = projectDescription;
+        document.getElementById('projectDetailImage').src = projectImageSrc;
+
+        // 显示模态框
+        var modal = document.getElementById("projectDetailModal");
+        modal.style.display = "block";
+    });
+	document.addEventListener("DOMContentLoaded", function() {
+    // 获取所有的项目
+    var projects = document.querySelectorAll('.portfolio');
+
+    // 添加点击事件监听器到每个项目上
+    projects.forEach(function(project) {
+        project.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            // 获取项目的标题和图片信息
+            var projectName = project.querySelector('.co_title').innerText;
+            var projectImageSrc = project.querySelector('img').getAttribute('src');
+
+            // 更新模态框的内容
+            document.getElementById('projectDetailName').innerText = projectName;
+            document.getElementById('projectDetailImage').src = projectImageSrc;
+
+            // 显示模态框
+            document.getElementById('projectDetailModal').style.display = 'block';
+        });
+    });
+});
+
+}
+
+// 添加表单提交事件监听器
+projectForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // 获取表单中的值
+    var projectName = document.getElementById("projectName").value;
+    var projectDescription = document.getElementById("projectDescription").value;
+    var projectCategory = document.getElementById("projectCategory").value;
+    var projectImage = document.getElementById("projectImage").files[0];
+
+    // 创建新的项目对象
+    var project = {
+        name: projectName,
+        description: projectDescription,
+        category: projectCategory,
+        image: URL.createObjectURL(projectImage)
+    };
+
+    // 添加项目到页面
+    addProjectToPage(project);
+
+    // 清空表单
+    projectForm.reset();
+    // 隐藏模态框
+    var modal = document.	getElementById("myModal");
+    modal.style.display = "none";
+});
+
+
+});
+
+// 清除本地存储中保存的用户添加的项目信息
+function clearUserLocalStorage() {
+    localStorage.removeItem("userAddedProjects");
+    location.reload(); // 重新加载页面
+}
+
+// 获取清除按钮
+var clearProjectsBtn = document.getElementById("clearProjectsBtn");
+
+// 当点击清除按钮时，清除本地存储中的用户添加的项目信息
+clearProjectsBtn.onclick = function() {
+    clearUserLocalStorage();
+};
+
+
+// 获取模态框关闭按钮
+var closeModalButtons = document.querySelectorAll(".close, .closeDetail");
+closeModalButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        var modal = button.closest(".modal");
+        modal.style.display = "none";
+    });
+});
+
+// 获取模态框
+var modal = document.getElementById("myModal");
+
+// 当用户点击模态框之外的任何地方，关闭模态框
+window.addEventListener("click", function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+});
+// 页面加载完成时，从本地存储中获取项目信息并添加到页面
+window.onload = function() {
+    var savedProjects = localStorage.getItem("savedProjects");
+    if (savedProjects) {
+        // 如果有保存的项目信息，则将其添加到页面
+        var projects = JSON.parse(savedProjects);
+        projects.forEach(function(project) {
+            addProjectToPage(project);
+        });
+    }
+};
+
+    </script>
+	
+	
+
+	 <div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</section>
+
+</body>
+</html> 		
+             		
+      	   		                                                                                            

@@ -1,0 +1,502 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>growth_path</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Add fancyBox main JS and CSS files -->
+<script src="js/jquery.min.js"></script>
+<link rel="stylesheet" href="css/comments.css">
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+<!--  -->
+ <!-- Linking scripts -->
+
+ <link href='#css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+ <link href="css/font-awesome.min.css" rel="stylesheet">
+ <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+ <link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+			});
+		});
+		</script>
+</head>
+<body>
+	<!-- 导航 -->
+<section>
+	<div class="header">	
+		<div class="wrap"> 
+				<div class="cssmenu">
+					<ul>
+						<li><a href="index.html">我就是我</a></li>
+						<li><a href="college.html">我的大学</a></li> 
+						<li><a href="hometown.html">我的家乡</a></li> 
+						<li><a href="company.html">我的公司</a></li> 
+						<li class="active"><a href="growth.html">我的足迹</a></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+		</div>
+	</div>
+</section>
+ 
+
+
+
+<!-- banner -->
+<section>
+	<div class="index-banner">
+		<div class="wmuSlider example1">
+		   <div class="wmuSliderWrapper">
+			   <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   <div class="banner-wrap">
+					   <div class="slider-left">
+						<h3>衡山小学</h3>
+					
+						</div>
+					 <div class="slider-right">
+						<img src="images/sch1.png" /> 
+					 </div>
+					 <div class="clear"></div>
+				 </div>
+				</article>
+			   <article style="position: relative; width: 100%; opacity: 1;"> 
+					<div class="banner-wrap">
+						 <div class="slider-right">
+						<img src="images/sch2.png" /> 
+					 </div>
+					   <div class="slider-left">
+						<h3>甲子中学附属实验中学</h3>
+					
+						</div>
+					<div class="clear"></div>
+				 </div>
+			   </article>
+			   <article style="position: absolute; width: 100%; opacity: 0;">
+				   <div class="banner-wrap">
+					   <div class="slider-left">
+						<h3>汕尾市林伟华中学</h3>
+					
+						</div>
+					<div class="slider-right">
+						<img src="images/sch3.png" /> 
+					 </div>
+					 <div class="clear"></div>
+				 </div>
+			   </article>
+			   <article style="position: absolute; width: 100%; opacity: 0;">
+				   <div class="banner-wrap">
+					   <div class="slider-right">
+						<img src="images/sch4.png" /> 
+					 </div>
+					   <div class="slider-left">
+						<h3>深圳职业技术大学</h3>
+					
+						</div>
+					 <div class="clear"></div>
+				 </div>
+			   </article>
+			   <article style="position: absolute; width: 100%; opacity: 0;"> 
+					   <div class="banner-wrap">
+					   <div class="slider-left">
+						<h3>深圳市畅航物流公司</h3>
+					
+						</div>
+					 <div class="slider-right">
+						<img src="images/sch5.png" /> 
+					 </div>
+					 <div class="clear"></div>
+				 </div>
+			  </article>
+			</div>
+			<a class="wmuSliderPrev">Previous</a><a class="wmuSliderNext">Next</a>
+			<ul class="wmuSliderPagination">
+				<li><a href="#" class="">0</a></li>
+				<li><a href="#" class="">1</a></li>
+				<li><a href="#" class="wmuActive">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+			  </ul>
+	 </div>
+			 <script src="js/jquery.wmuSlider.js"></script> 
+			 <script type="text/javascript" src="js/modernizr.custom.min.js"></script> 
+					<script>
+							$('.example1').wmuSlider();         
+					   </script> 	           	      
+	</div>
+</section>
+<!-- 主体 -->
+<section id="home" class="templatemo-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 templatemo-position-relative">
+				<div class="templatemo-flex-center templatemo-black-bg text-center">
+					<div class="templatemo-home-image-container">
+						<img src="images/col.jpg" alt="Home" class="templatemo-home-image">
+						<div class="templatemo-image-overlay">							
+							<!-- <span class=""></span> -->
+							<!-- <img src="images/lg.png" alt="" class="fa fa-search templatemo-search-icon"> -->
+							<p class="text-uppercase templatemo-gold">座右铭</p>
+							<p class="text-uppercase">在那毫无波澜的日复一日里，</br>终有一天会让你看到努力的意义</p>												
+						</div>
+					</div>
+				</div>										
+			</div>
+			<div class="col-lg-6 col-md-6">
+				<div class="templatemo-content-box templatemo-second-box">
+					<h2 class="templatemo-brown">在那毫无波澜的日复一日里</h2>
+					<h3 class="templatemo-gold">
+						终有一天会让人看到努力的意义</h3>
+					<p class="margin-top-30">在平凡的日子里，仿佛波澜不惊，但在这连续的日复一日中，我们所付出的努力终将开启一扇通往成功的大门。正如寻找海底的珍珠需要毅力与耐心，我们的奋斗也会在某一天为世人展现其意义。每一份努力都是一颗种子，不断滋养着我们内心的希望和梦想。当我们坚持不懈地追求目标，即使面对风雨，也能坚定地向前。因为在那静谧的日子里，我们正在为自己的梦想播下希望的种子，等待着它们生根发芽，终将绽放出耀眼的光芒。努力不会白费，只要我们坚持，终将收获美好的果实。</p>
+				
+				</div>					
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="about" class="templatemo-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6">
+				<div class="templatemo-content-box text-right">
+					<h2 class="templatemo-brown">
+						<span class="templatemo-section-title">感恩一切相遇</span>
+						<span class="templatemo-section-title">聚是一团火 <span class="templatemo-gold"><strong>散是满天星</strong></span></span>
+					</h2>
+					<p class="margin-top-30">这一路，结识了很多志同道合的伙伴，受教过太多人的帮助，感受到太多人带来的温暖，留下太多美好的回忆，聚是一团火 散是满天星 希望大家都前程似锦</p>
+					<p></p>
+				</div>										
+			</div>
+			<div class="col-lg-6 col-md-6">
+				<div class="templatemo-flex-center templatemo-black-bg">
+					<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
+						<div class="jcarousel-wrapper templatemo-products">
+							<div class="jcarousel">
+								<ul>
+									<li>
+										<div class="templatemo-product-container text-center">
+											<h3 class="templatemo-gold">and 20届师兄师姐</h3>
+											<img src="images/pe4.jpg" alt="Product 2" class="templatemo-product-img">	
+										</div>								        	
+									</li>
+									<li>
+										<div class="templatemo-product-container text-center">
+											<h3 class="templatemo-gold">and 舍友</h3>
+											<img src="images/psc (78).jfif" alt="Product 2" class="templatemo-product-img">	
+										</div>								        	
+									</li>
+									<li>	
+										<div class="templatemo-product-container text-center">
+											<h3 class="templatemo-gold">and 21物联网4</h3>
+											<div class="templatemo-product-img" style="background-image: url('images/bj3.jpg');"></div>
+										</div>								        	
+									</li>
+									<li>
+										<div class="templatemo-product-container text-center">
+											<h3 class="templatemo-gold">and 23物联网2</h3>
+											<img src="images/zb1.jpg" alt="Product 2" class="templatemo-product-img">	
+										</div>								        	
+									</li>
+									<li>
+										<div class="templatemo-product-container text-center">
+											<h3 class="templatemo-gold">and 21届协会干部</h3>
+											<img src="images/xh1.jfif" alt="Product 3" class="templatemo-product-img">	
+										</div>								        	
+									</li>
+									<li>
+										<div class="templatemo-product-container text-center">
+											<h3 class="templatemo-gold">and 21物联网4</h3>
+											<img src="images/pe1.jpg" alt="Product 3" class="templatemo-product-img">	
+										</div>								        	
+									</li>
+									<li>
+										<div class="templatemo-product-container text-center">
+											<h3 class="templatemo-gold">and 23届协会干部</h3>
+											<img src="images/pe2.jfif" alt="Product 3" class="templatemo-product-img">	
+										</div>								        	
+									</li>
+									<li>
+										<div class="templatemo-product-container text-center">
+											<h3 class="templatemo-gold">and 暑假工好友</h3>
+											<img src="images/pe3.jfif" alt="Product 3" class="templatemo-product-img">	
+										</div>								        	
+									</li>
+									
+								</ul>
+							</div>
+							<a href="#" class="jcarousel-control-prev inactive">&lsaquo;</a>
+							<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+						</div>													
+					</div>						
+				</div>			
+		</div>
+	</div>
+</section>
+<section id="services" class="templatemo-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6">
+				<div class="templatemo-flex-center templatemo-black-bg text-center">
+					<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
+						<div class="templatemo-flex-item-ie-fix padding-30">
+							<h2 class="templatemo-gold">我的理念</h2>
+							<div class="templat	emo-service-container margin-top-15">
+								<img src="images/linian1.png" alt="Plan 1" class="templatemo-service-image">
+								<div class="templatemo-service-content text-left">
+									<h3 class="templatemo-service-title templatemo-brown">读书</h3>
+									<p class="templatemo-service-description">
+										学生时期珍贵无比，好好读书如播撒希望种子。知识是投资，奠定未来基础。青春执着追求智慧，书写精彩人生。</p>
+								</div>						
+							</div>
+							<div class="templatemo-service-container">
+								<img src="images/linian2.png" alt="Plan 2" class="templatemo-service-image">
+								<div class="templatemo-service-content text-left">
+									<h3 class="templatemo-service-title templatemo-brown">赚钱</h3>
+									<p class="templatemo-service-description">
+										上班时，刻苦工作是赚取财富的重要途径。努力工作是实现财富目标的关键。靠着勤劳和智慧，我们能够实现经济独立，并为自己和家人创造更美好的生活。</p>	
+								</div>						
+							</div>
+							<div class="templatemo-service-container">
+								<img src="images/linian3.png" alt="Plan 3" class="templatemo-service-image">
+								<div class="templatemo-service-content text-left">
+									<h3 class="templatemo-service-title templatemo-brown">看世界</h3>
+									<p class="templatemo-service-description">
+										赚够钱后，我们可以去探索外面的世界。旅行、品味美食、体验文化，让生活更加丰富多彩。</p>	
+								</div>						
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6">
+				<div class="templatemo-content-box templatemo-second-box">
+					<h2 class="templatemo-brown">
+						<span class="templatemo-section-title">正确的时间做正确的事情</span>
+						<span class="templatemo-section-title">不骄不躁 <span class="templatemo-gold"><strong>破界、跨界、闯世界</strong></span></span>
+					</h2>
+					<p class="margin-top-30">
+生活如旅程，学生时代是播种希望的春天，工作阶段是磨练自我的岁月，赚够钱后，我们踏上探索外面世界的旅程，领略不同文化，感受生活的多彩。每个阶段都有独特的意义，共同构成了丰富多彩的人生画卷。每一步的努力都是为了追求更美好的未来，值得我们用心体验，珍惜和努力。
+						
+						
+						</p>
+				</div>					
+			</div>
+		</div>
+	</div>
+</section>
+<section id="products" class="templatemo-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6">
+				<div class="templatemo-content-box text-right">
+					<h2 class="templatemo-brown">
+						<span class="templatemo-section-title">成长足迹</span>
+						<span class="templatemo-section-title">历经千帆 <span class="templatemo-gold"><strong>归来仍少年</strong></span></span>
+					</h2>
+					<p class="margin-top-30">彼时的少年站在成长的尽头，回首过去，一路崎岖早已繁花盛开。回首这十几年的读书生涯，从一个小村子从小城镇到小城市再到一线城市，无谓其他，对一路向上、一路拼搏、不断进取的自己说声幸苦了。:-)</p>
+				</div>					
+			</div>
+			<div class="col-lg-6 col-md-6">
+				<div class="templatemo-flex-center templatemo-black-bg">
+					<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
+						<div class="jcarousel-wrapper templatemo-products">
+							<div class="jcarousel">
+								<ul>
+									
+									<li>
+										<div class="templatemo-product-container text-center">
+											<h3 class="templatemo-gold">小学</h3>
+											<img src="images/sch1.png" alt="Product 2" class="templatemo-product-img">	
+										</div>								        	
+									</li>
+									<li>
+										<div class="templatemo-product-container text-center">
+											<h3 class="templatemo-gold">初中</h3>
+											<img src="images/sch2.png" alt="Product 2" class="templatemo-product-img">	
+										</div>								        	
+									</li>
+									<li>
+										<div class="templatemo-product-container text-center">
+											<h3 class="templatemo-gold">高中</h3>
+											<img src="images/sch3.png" alt="Product 3" class="templatemo-product-img">	
+										</div>								        	
+									</li>
+									<li>
+										<div class="templatemo-product-container text-center">
+											<h3 class="templatemo-gold">大学</h3>
+											<img src="images/sch4.png" alt="Product 3" class="templatemo-product-img">	
+										</div>								        	
+									</li>
+									<li>
+										<div class="templatemo-product-container text-center">
+											<h3 class="templatemo-gold">工作</h3>
+											<img src="images/sch6.png" alt="Product 3" class="templatemo-product-img">	
+										</div>								        	
+									</li>
+									<li>
+										<div class="templatemo-product-container text-center">
+											<h3 class="templatemo-gold">工作</h3>
+											<img src="images/sch5.png" alt="Product 3" class="templatemo-product-img">	
+										</div>								        	
+									</li>
+									<li>
+										<div class="templatemo-product-container text-center">
+											<h3 class="templatemo-gold">敬未来</h3>
+											<img src="images/futrue1.png" alt="Product 2" class="templatemo-product-img">	
+										</div>								        	
+									</li>
+								</ul>
+							</div>
+							<a href="#" class="jcarousel-control-prev inactive">&lsaquo;</a>
+							<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+						</div>													
+					</div>						
+				</div>					
+			</div>
+		</div>
+	</div>
+</section>
+<section id="contact" class="templatemo-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6">
+				<div class="templatemo-flex-center templatemo-black-bg">
+					<form action="#" method="post">
+						<div class="tm-contact-form">
+							<div class="form-group">
+								<input type="text" id="contact_name" class="form-control" placeholder="Name..." />
+							</div>
+							<div class="form-group">
+								<input type="email" id="contact_email" class="form-control" placeholder="Email..." />
+							</div>
+							<div class="form-group">
+								<input type="text" id="contact_subject" class="form-control" placeholder="Subject..." />
+							</div>
+							<div class="form-group">
+								<textarea id="contact_message" class="form-control" rows="8" placeholder="Message..."></textarea>
+							</div>
+						</div>
+						<button type="submit" class="btn text-uppercase templatemo-btn templatemo-send-btn">Send</button>
+					</form>	
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6">
+				<div class="templatemo-content-box templatemo-second-box">
+					<h2 class="templatemo-brown">联系我 </h2>
+					<p class="margin-top-30">欢迎您通过邮箱或者以下社交软件联系我 </p>
+					<div>
+						<img src="images/social-icons.png" alt="Social icons" class="templatemo-social-icons-img">
+						<!-- QQ 图标 -->
+						<a href="https://user.qzone.qq.com"><img src="images/f1.png" alt="QQ"></a>
+						<!-- 微信图标 -->
+						<a href="https://weixin.qq.com/"><img src="images/f2.png" alt="微信"></a>
+						<!-- 小红书图标 -->
+						<a href="https://www.xiaohongshu.com/"><img src="images/f3.png" alt="小红书"></a>
+						<!-- 知乎图标 -->
+						<a href="https://www.zhihu.com/"><img src="images/f4.png" alt="知乎"></a>
+						
+					</div>
+				</div>					
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- footer -->
+<section>
+	<footer class="index_footer">
+		<!-- 左侧部分 -->
+		<div class="left-section">
+			<!-- 图标 -->
+			<img src="images/footer.jpg" alt="图标" width="80" height="80">
+			<!-- 座右铭 -->
+			<p class="motto">欢迎来到我的世界:-)</p>
+		</div>
+		
+		<!-- 右侧部分 -->
+		<div class="right-section">
+			<!-- QQ 图标 -->
+			<a href="https://user.qzone.qq.com"><img src="images/f1.png" alt="QQ"></a>
+			<!-- 微信图标 -->
+			<a href="https://weixin.qq.com/"><img src="images/f2.png" alt="微信"></a>
+			<!-- 小红书图标 -->
+			<a href="https://www.xiaohongshu.com/"><img src="images/f3.png" alt="小红书"></a>
+			<!-- 知乎图标 -->
+			<a href="https://www.zhihu.com/"><img src="images/f4.png" alt="知乎"></a>
+		</div>
+	</footer>
+</section>
+
+<!-- JS-->
+<section>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.jcarousel.min.js"></script>
+	<script src="js/templatemo_script.js"></script>
+
+</section>
+
+
+</body>	
+</html>    		
