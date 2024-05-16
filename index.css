@@ -1,0 +1,80 @@
+#container_acti {
+	width: 800px;
+	margin: 0 auto; /* 居中 */
+	text-align: center;
+	background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	animation: gradientBg 15s ease infinite;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+@keyframes gradientBg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1 {
+	margin-bottom: 20px;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+label {
+	margin-right: 10px;
+	color: white;
+}
+
+select {
+	padding: 5px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	max-height: 300px; /* 控制列表最大高度 */
+	overflow-y: auto; /* 添加滚动条 */
+	/* border: 1px solid #ccc; */
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li {
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+li:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.fadeIn {
+	animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
