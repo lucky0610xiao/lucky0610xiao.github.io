@@ -996,7 +996,7 @@ li:hover {
 
 /**** Slider *****/
 .index-banner{
-	background:url(../images/banner.jpg)repeat;
+	background:url(banner.jpg)repeat;
 	padding:10px 0;
 }
 .banner-wrap{
@@ -1037,7 +1037,7 @@ li:hover {
 	width: 46px;
 	height: 100px;
 	text-indent: -9999px;
-	background:url(../images/img-sprite.png)no-repeat;
+	background:url(img-sprite.png)no-repeat;
 	top:40%;
 	z-index: 2;
 	cursor: pointer;
@@ -1180,10 +1180,10 @@ p.bottom{
 	text-indent: -9999px;
 	width:24px;
 	height:24px;
-	background: url(../images/img-sprite.png)no-repeat -126px -15px;
+	background: url(img-sprite.png)no-repeat -126px -15px;
 }
 .wmuSliderPagination a.wmuActive {
-	background: url(../images/img-sprite.png)no-repeat -156px -15px;
+	background: url(img-sprite.png)no-repeat -156px -15px;
 }
 /*--content--*/
 .main{
@@ -1283,7 +1283,7 @@ span.small{
 	font-size: 1.5em;
 	text-transform: uppercase;
 	text-align: center;
-	background:url(../images/bg-h2.png) repeat-x center;
+	background:url(bg-h2.png) repeat-x center;
 	margin-bottom:40px;
 }
 .content-middle h2 span{
@@ -1329,7 +1329,7 @@ span.small{
 	font-size: 1.5em;
 	text-transform: uppercase;
 	text-align: center;
-	background:url(../images/bg-h2.png) repeat-x center;
+	background:url(bg-h2.png) repeat-x center;
 	margin-bottom:40px;
 }
 .content-bottom h2 span{
@@ -1433,11 +1433,11 @@ span.small{
 }
 .nbs-flexisel-nav-left {
 	left: 0px;
-	background: url(../images/img-sprite.png) no-repeat -19px -21px;
+	background: url(img-sprite.png) no-repeat -19px -21px;
 }
 .nbs-flexisel-nav-right {
 	right: 0px;
-	background: url(../images/img-sprite.png) no-repeat -55px -20px;
+	background: url(img-sprite.png) no-repeat -55px -20px;
 }
 
 /* 留言板内容 */
@@ -1616,73 +1616,73 @@ li.facebook a span {
 	height: 30px;
 	width: 30px;
 	display: block;
-	background: url(../images/img-sprite.png) no-repeat -283px -14px;
+	background: url(img-sprite.png) no-repeat -283px -14px;
 }
 li.facebook a span:hover {
-	background: url(../images/img-sprite.png) no-repeat -283px -46px;
+	background: url(img-sprite.png) no-repeat -283px -46px;
 }
 li.google a span {
 	height: 30px;
 	width: 30px;
 	display: block;
-	background: url(../images/img-sprite.png) no-repeat -316px -14px;
+	background: url(img-sprite.png) no-repeat -316px -14px;
 }
 li.google a span:hover {
-	background: url(../images/img-sprite.png) no-repeat -316px -46px;
+	background: url(img-sprite.png) no-repeat -316px -46px;
 }
 li.twitter a span {
 	height: 30px;
 	width: 30px;
 	display: block;
-	background: url(../images/img-sprite.png) no-repeat -349px -14px;
+	background: url(img-sprite.png) no-repeat -349px -14px;
 }
 li.twitter a span:hover {
-	background: url(../images/img-sprite.png) no-repeat -349px -46px;
+	background: url(img-sprite.png) no-repeat -349px -46px;
 }
 li.linkedin a span {
 	height: 30px;
 	width: 30px;
 	display: block;
-	background: url(../images/img-sprite.png) no-repeat -382px -14px;
+	background: url(img-sprite.png) no-repeat -382px -14px;
 }
 li.linkedin a span:hover {
-	background: url(../images/img-sprite.png) no-repeat -382px -46px;
+	background: url(img-sprite.png) no-repeat -382px -46px;
 }
 li.youtube a span {
 	height: 30px;
 	width: 30px;
 	display: block;
-	background: url(../images/img-sprite.png) no-repeat -416px -14px;
+	background: url(img-sprite.png) no-repeat -416px -14px;
 }
 li.youtube a span:hover {
-	background: url(../images/img-sprite.png) no-repeat -416px -46px;
+	background: url(img-sprite.png) no-repeat -416px -46px;
 }
 li.bloger a span {
 	height: 30px;
 	width: 30px;
 	display: block;
-	background: url(../images/img-sprite.png) no-repeat -448px -14px;
+	background: url(img-sprite.png) no-repeat -448px -14px;
 }
 li.bloger a span:hover {
-	background: url(../images/img-sprite.png) no-repeat -448px -46px;
+	background: url(img-sprite.png) no-repeat -448px -46px;
 }
 li.rss a span {
 	height: 30px;
 	width: 30px;
 	display: block;
-	background: url(../images/img-sprite.png) no-repeat -482px -14px;
+	background: url(img-sprite.png) no-repeat -482px -14px;
 }
 li.rss a span:hover {
-	background: url(../images/img-sprite.png) no-repeat -482px -46px;
+	background: url(img-sprite.png) no-repeat -482px -46px;
 }
 li.dribble a span {
 	height: 30px;
 	width: 30px;
 	display: block;
-	background: url(../images/img-sprite.png) no-repeat -515px -14px;
+	background: url(img-sprite.png) no-repeat -515px -14px;
 }
 li.dribble a span:hover {
-	background: url(../images/img-sprite.png) no-repeat -515px -46px;
+	background: url(img-sprite.png) no-repeat -515px -46px;
 }
 .social-icons h4{
 	color: #FFF;
@@ -1768,7 +1768,7 @@ p.copy a:hover{
 	line-height: 1.5em;
 }
 .search input[type="submit"] {
-	background:url('../images/email.png') no-repeat 0px 0px;
+	background:url('email.png') no-repeat 0px 0px;
 	padding:4px 14px;
 	border: none;
 	cursor: pointer;
@@ -1778,7 +1778,7 @@ p.copy a:hover{
 }
 /*--portfolio--*/
 .banner{
-	background:url(../images/banner.jpg)no-repeat;
+	background:url(banner.jpg)no-repeat;
 	padding:50px 0;
 }
 .banner h2{
@@ -2304,7 +2304,7 @@ span.icon{
 	font-family: "Century Gothic",Arial, Helvetica, sans-serif;
 }
 .search_box form input[type="submit"] {
-	background: url('../images/search.png') no-repeat -3px 0px;
+	background: url('search.png') no-repeat -3px 0px;
 	padding: 4px 14px;
 	border: none;
 	cursor: pointer;
