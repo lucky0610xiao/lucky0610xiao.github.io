@@ -1,0 +1,190 @@
+/**** Slider *****/
+.home-banner{
+	/* background:url(banner.jpg)no-repeat; */
+	padding:10px 0;
+   
+}
+.banners-wrap{
+	width: 100%;
+	margin: 0 auto;
+}
+.wmuSliders {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 50px;
+}
+.wmuSliders .wmuSliderWrappers article {
+	position: relative;
+	text-align: center;
+}
+.wmuSliders .wmuSliderWrappers article img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	display:block;
+	margin:0 auto;
+}
+.wmuGallery .wmuGalleryImage {
+	position: relative;
+	text-align: center;
+}
+.wmuGallery .wmuGalleryImage img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+/* Default Skin */
+.wmuGallery .wmuGalleryImage {
+	margin-bottom: 10px;
+}
+.wmuSliderPrev, .wmuSliderNext {
+	position: absolute;
+	width: 46px;
+	height: 100px;
+	text-indent: -9999px;
+	background:url(img-sprite.png)no-repeat;
+	top:40%;
+	z-index: 2;
+	cursor: pointer;
+}
+.wmuSliderPrev {
+	background-position: -15px -20px;
+	left: 0px;
+}
+.wmuSliderNext {
+	background-position: -52px -10px;
+	right: 0px;
+}
+.btn {
+	margin: 30px 60px 0;
+	border: none;
+	font-family: inherit;
+	color:#fff;
+	background: none;
+	cursor: pointer;
+	padding:10px 30px;
+	display: inline-block;
+	border-bottom: 3px solid #ffea00;
+	letter-spacing: 1px;
+	outline: none;
+	float:right;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn1 {
+	margin:30px 0;
+	border: none;
+	font-family: inherit;
+	color:#fff;
+	background: none;
+	cursor: pointer;
+	padding:8px 20px;
+	display: inline-block;
+	border-bottom: 3px solid #ffea00;
+	letter-spacing: 1px;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn-8 {
+	display: block;
+	background: #000;
+	font-size:0.99em;
+	font-family: "Century Gothic",Arial, Helvetica, sans-serif;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.btn-8b:hover {
+	background:#222;
+}
+.btn-8 a{
+	color: #fff;
+}
+.slider-lefts{
+	float: left;
+	padding-top:6%;
+	width: 47.5%;
+}
+.slider-lefts h3{
+	font-size:4em;
+	color:#000;
+	background:#ffea00;
+	font-family: "Century Gothic";
+	text-transform:uppercase;
+	margin-bottom:10px;
+	width:70%;
+	font-weight:600;
+	float:none;
+}
+.slider-lefts h4{
+	font-size:4em;
+	color:#000;
+	background:#ffea00;
+	font-family: "Century Gothic";
+	text-transform:uppercase;
+	font-weight:600;
+	margin-bottom:10px;
+	width:100%;
+}
+.slider-rights{
+	width:52.5%;
+	float:left;
+}
+p.top{
+	color:#fff;
+	font-size:1.7em;
+	line-height:1.5em;
+	font-family: "Century Gothic";
+	background:#414146;
+	text-align:left;
+	padding:0px 10px;
+	width:68%;
+	margin-bottom:1px;
+}
+p.middle{
+	color:#fff;
+	font-size:1.7em;
+	line-height:1.5em;
+	font-family: "Century Gothic";
+	background:#414146;
+	text-align:left;
+	padding:0px 10px;
+	width:64%;
+	margin-bottom:1px;
+}
+p.bottom{
+	color:#fff;
+	font-size:1.7em;
+	line-height:1.5em;
+	font-family: "Century Gothic";
+	background:#414146;
+	text-align:left;
+	padding:0px 10px;
+	width:56%;
+}
+.wmuSliderPagination {
+	z-index: 2;
+	position: absolute;
+	left:50%;
+	bottom: 10px;
+}
+.wmuSliderPagination li {
+	float: left;
+	margin: 0 2px 0 0;
+	list-style-type: none;
+}
+.wmuSliderPagination a {
+	display: block;
+	text-indent: -9999px;
+	width:24px;
+	height:24px;
+	background: url(img-sprite.png)no-repeat -126px -15px;
+}
+.wmuSliderPagination a.wmuActive {
+	background: url(img-sprite.png)no-repeat -156px -15px;
+}
