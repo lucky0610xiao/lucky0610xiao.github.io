@@ -1,0 +1,12 @@
+
+/* CONTACT ------------------------------------------------------------*/
+#map_canvas {
+  display: block;
+  height: 120px;
+  width: 310px;
+  /* margin-bottom: 20px; */
+  margin-left: 50px;
+  margin-top: -40px;
+
+}
+.inner_copyright{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
