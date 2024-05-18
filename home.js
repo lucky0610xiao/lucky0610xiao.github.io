@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
     // 使用 Chart.js 绘制人口数据柱状图
-    var populationChart = new Chart(document.getElementById('population-chart'), {
+    var populationChart = new Chart(document.getElementById('population-charts'), {
         type: 'bar',
         data: {
             labels: populationData.map(data => data.district),
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // 使用 Chart.js 绘制经济数据柱状图
-    var economicChart = new Chart(document.getElementById('economic-chart'), {
+    var economicChart = new Chart(document.getElementById('economic-charts'), {
         type: 'bar',
         data: {
             labels: economicData.map(data => data.district),
@@ -92,17 +92,22 @@ document.addEventListener("DOMContentLoaded", function() {
     // 更新柱状图的样式
     const chartContainers = document.querySelectorAll('.chart-container');
     chartContainers.forEach(container => {
-        container.style.width = '10%'; // 设置柱状图容器宽度为页面的一半
+        container.style.width = '5%'; // 设置柱状图容器宽度为页面的一半
         container.style.margin = '0 auto'; // 居中显示
     });
     
     // 调整柱形图的宽度
    // 调整柱形图的宽度
-populationChart.options.scales.xAxes[0].barPercentage = 0.5;
+// populationChart.options.scales.xAxes[0].barPercentage = 0.5;
+// populationChart.options.scales.xAxes[0].categoryPercentage = 0.8;
+
+// economicChart.options.scales.xAxes[0].barPercentage = 0.5;
+// economicChart.options.scales.xAxes[0].categoryPercentage = 0.8;
+populationChart.options.scales.xAxes[0].barPercentage = 0.1;
 populationChart.options.scales.xAxes[0].categoryPercentage = 0.8;
 
-economicChart.options.scales.xAxes[0].barPercentage = 0.5;
-economicChart.options.scales.xAxes[0].categoryPercentage = 0.8;
+economicChart.options.scales.xAxes[2].barPercentage = 0.5;
+economicChart.options.scales.xAxes[2].categoryPercentage = 0.8;
 
 
 const carousel = document.getElementById('carousel');
