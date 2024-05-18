@@ -63,16 +63,17 @@ body{
     margin-bottom: 20px;
 }
 
-#population-chart, #economic-chart {
-    width: 980px;
+#population-charts, #economic-charts {
+    width: 500px;
     margin: 0 auto;
     margin-bottom: 20px;
-    height: 200px;
+    height: 300px;
 }
 
 /* ziijstart */
 .banner_h4{
 	font-size: 20px;
+	
 }
 
 
@@ -954,7 +955,7 @@ p {
 		transform: translateX(-300%);
 	}
 }
-
+/* population-chart */
 /*--menu--*/
 .cssmenu{
 	float:right;
